@@ -1,16 +1,38 @@
-# Fake News Detection
+# 📰 Fake News Detection
 
-This project detects fake news using machine learning models.
+An end-to-end **machine learning application for detecting fake and real news articles** using natural language processing (NLP) and multiple classification algorithms.
 
-## Models Used
-- Logistic Regression: Accuracy 92%, Precision (Fake: 89%, Real: 94%)
-- Decision Tree: Accuracy 82%, Precision (Fake: 82%, Real: 82%)
-- Gradient Boosting: Accuracy 91%, Precision (Fake: 90%, Real: 93%)
-- Random Forest: Accuracy 91%, Precision (Fake: 91%, Real: 92%)
+The project preprocesses news text, converts it into numerical features using **TF-IDF**, and compares multiple machine learning models to identify the most effective classifier. The final models are integrated into an interactive **Streamlit application** for real-time predictions.
 
-## How to Run
-1. Install dependencies: `pip install -r requirements.txt`
-2. Run the app: `streamlit run app.py`
+---
 
-## Dataset
-The dataset is from Kaggle's Fake and Real News dataset.
+## 🎯 Objective
+
+The goal of this project is to automatically classify a news article as **Fake** or **Real** based on its textual content.
+
+The system applies NLP-based text preprocessing and machine learning classification to identify patterns associated with misleading or authentic news.
+
+---
+
+## ⚙️ How It Works
+
+The complete pipeline follows:
+
+```text
+News Dataset
+     ↓
+Text Cleaning & Preprocessing
+     ↓
+Regex-based Text Normalization
+     ↓
+TF-IDF Feature Extraction
+     ↓
+Train/Test Split
+     ↓
+Multiple ML Classifiers
+     ↓
+Model Evaluation
+     ↓
+Best Model Selection
+     ↓
+Streamlit Prediction App
