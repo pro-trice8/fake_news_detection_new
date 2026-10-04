@@ -36,6 +36,7 @@ Model Evaluation
 Model Selection
      ↓
 Streamlit Prediction App
+```
 
 1. Text Preprocessing
 The news articles are cleaned before being passed to the machine learning models.
